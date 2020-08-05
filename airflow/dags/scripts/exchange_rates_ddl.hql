@@ -1,0 +1,15 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS exchange_rates(
+    base STRING,
+    forex_date DATE,
+    USD DOUBLE,
+    JPY DOUBLE,
+    CAD DOUBLE,
+    GBP DOUBLE,
+    NZD DOUBLE,
+    INR DOUBLE,
+    start_at DATE,
+    end_at DATE
+    )
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
